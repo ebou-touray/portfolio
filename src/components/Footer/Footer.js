@@ -1,8 +1,23 @@
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import {
+  AiFillFacebook,
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillLinkedin,
+} from 'react-icons/ai';
 
 import { SocialIcons } from '../Header/HeaderStyles';
-import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import {
+  CompanyContainer,
+  FooterWrapper,
+  LinkColumn,
+  LinkItem,
+  LinkList,
+  LinkTitle,
+  Slogan,
+  SocialContainer,
+  SocialIconsContainer,
+} from './FooterStyles';
 
 const Footer = () => {
   return (
@@ -19,7 +34,10 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Developing user-friendly web apps</Slogan>
+          <Slogan>
+            Copyright &copy; 2021 Ebou Touray | Powered by Ebou Touray |
+            Developing user-friendly apps.
+          </Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://github.com/ebou-touray">
@@ -30,6 +48,12 @@ const Footer = () => {
           </SocialIcons>
           <SocialIcons href="https://instagram.com/ebou_2ray/">
             <AiFillInstagram size="3rem" />
+          </SocialIcons>
+          <SocialIcons
+            href="https://facebook.com/e2ray/
+/"
+          >
+            <AiFillFacebook size="3rem" />
           </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>

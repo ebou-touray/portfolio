@@ -63,8 +63,8 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About</SectionTitle>
       <SectionText>
-        I started learning about React in 2020 and it has been a useful tool in
-        my toolkit when it comes to building user interfaces.
+        I am a Full Web Stack Developer. I am skilled in JavaScript(ES6+), React.js,
+        Node.js., Express, Firebase and MongoDb. I am always eager to learn new things to improve and evolve.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
@@ -114,9 +114,7 @@ const Timeline = () => {
                     </defs>
                   </CarouselItemImg>
                 </CarouselItemTitle>
-                <CarouselItemText>
-                  {item.text}
-                </CarouselItemText>
+                <CarouselItemText>{item.text}</CarouselItemText>
               </CarouselItem>
             </CarouselMobileScrollNode>
           ))}
@@ -124,14 +122,14 @@ const Timeline = () => {
       </CarouselContainer>
       <CarouselButtons>
         {TimeLineData.map((item, index) => (
-          <CarouselButton 
-          key={index}
-          index={index}
-          active={activeItem}
-          onClick={(e) => handleClick(e, index)}
-          type="button"
+          <CarouselButton
+            key={index}
+            index={index}
+            active={activeItem}
+            onClick={(e) => handleClick(e, index)}
+            type="button"
           >
-            <CarouselButtonDot active={activeItem}/>
+            <CarouselButtonDot active={activeItem} />
           </CarouselButton>
         ))}
       </CarouselButtons>
