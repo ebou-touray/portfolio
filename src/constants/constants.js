@@ -52,5 +52,5 @@ export const TimeLineData = [
     year: 2007,
     text: 'Computer Operator/IT Support Officer, WAEC, The Gaambia.',
   },
-  { year: 2021, text: 'Freelancer fron-end and back-end web devloper' },
+  { year: 2021, text: 'Freelancer front-end and back-end web devloper' },
 ];
